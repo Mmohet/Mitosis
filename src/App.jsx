@@ -164,7 +164,7 @@ export default function MitosisApp() {
     if (isPlaying) {
       interval = setInterval(() => {
         setCurrentStage((prev) => (prev < STAGE_DATA.length - 1 ? prev + 1 : 0));
-      }, 3500); // 3.5 seconds per stage
+      }, 2500); // 2.5 seconds per stage
     }
     return () => clearInterval(interval);
   }, [isPlaying]);
